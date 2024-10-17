@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main() {
+    int num;
+    printf("Enter a number: ");
+    scanf("%d", &num);
+    printf("Octal Equivalent: ");
+    while (num != 0) {
+        printf("%d", num % 8);
+        num /= 8;
+    }
+    printf("\n");
+    return 0;
+}
